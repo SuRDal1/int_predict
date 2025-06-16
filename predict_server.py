@@ -11,22 +11,22 @@ app = Flask(__name__)
 # 1. 개별 모델 및 스케일러 불러오기
 
 # 3일 뒤 예측 모델
-model1 = load_model("C:/int_model/lstm_3days_model.h5")
-scaler_X3 = joblib.load("C:/int_model/scaler_X3.pkl")
-scaler_y3 = joblib.load("C:/int_model/scaler_y3.pkl")
+model1 = load_model("./int_model/lstm_3days_model.h5")
+scaler_X3 = joblib.load("./int_model/scaler_X3.pkl")
+scaler_y3 = joblib.load("./int_model/scaler_y3.pkl")
 
 # 5일 뒤 예측 모델
-model2 = load_model("C:/int_model/lstm_5days_model.h5")
-scaler_X5 = joblib.load("C:/int_model/scaler_X5.pkl")
-scaler_y5 = joblib.load("C:/int_model/scaler_y5.pkl")
+model2 = load_model("./int_model/lstm_5days_model.h5")
+scaler_X5 = joblib.load("./int_model/scaler_X5.pkl")
+scaler_y5 = joblib.load("./int_model/scaler_y5.pkl")
 
 # 공정A
-model3 = load_model("C:/int_model/model-temp-press1.h5")
-scalerA = joblib.load('C:/int_model/scaler1.pkl')
+model3 = load_model("./int_model/model-temp-press1.h5")
+scalerA = joblib.load('./int_model/scaler1.pkl')
 
 # 공정B
-model4 =load_model("C:/int_model/model-high_temp31.h5")
-scalerB = joblib.load('C:/int_model/scaler2.pkl')
+model4 =load_model("./int_model/model-high_temp31.h5")
+scalerB = joblib.load('./int_model/scaler2.pkl')
 
 
 
