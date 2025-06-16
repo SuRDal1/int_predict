@@ -220,7 +220,7 @@ def predictB():
 
 # 4. 서버 실행
 if __name__=='__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
 # 기본적으로 localhost:5000에서 실행(port값 생략가능)
 # 기본값은 host='127.0.0.1' -> 오직 본인 컴퓨터(로컬)에서만 접속 가능.
 # host='0.0.0.0'이면 같은 네트워크내 다른 기기에서도 접속 가능.
